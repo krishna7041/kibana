@@ -1,0 +1,12 @@
+---
+applications:
+- name: kibanai309848
+  command: node ./src/cli
+env:
+  http_proxy: http://proxy.wdf.sap.corp:8080
+  https_proxy: http://proxy.wdf.sap.corp:8080
+  FTP_PROXY: http://proxy.wdf.sap.corp:8080
+  ftp_proxy: http://proxy.wdf.sap.corp:8080
+  all_proxy: http://proxy.wdf.sap.corp:8080
+  HTTPS_PROXY: http://proxy.wdf.sap.corp:8080
+  HTTP_PROXY: http://proxy.wdf.sap.corp:8080

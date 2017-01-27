@@ -61,6 +61,8 @@ module.exports = async function (kbnServer, server, config) {
       path: route,
       method: 'GET',
       handler: function (req, reply) {
+        //looking for payload i309848
+        console.log(re.payload);
         return reply.redirect(format({
           search: req.url.search,
           pathname: req.url.pathname + '/',

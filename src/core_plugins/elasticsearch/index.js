@@ -94,6 +94,7 @@ module.exports = function ({ Plugin }) {
 
       // Set up the health check service and start it.
       const { start, waitUntilReady } = healthCheck(this, server);
+      console.log("gettingReady");
       server.expose('waitUntilReady', waitUntilReady);
       start();
     }
